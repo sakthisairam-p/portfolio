@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakthisairam P | AI & ML Portfolio</title>
+    <meta name="description" content="Portfolio of Sakthisairam P - Aspiring AI & ML Engineer and Computer Science Student.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2103/2103633.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Loading Animation -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="spinner-grow text-primary" role="status"></div>
+            <p class="mt-3 text-white fw-bold">Initializing System...</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold gradient-text" href="#">SAK.TECH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <h5 class="text-primary mb-3">Welcome to my universe</h5>
+                    <h1 class="display-3 fw-bold mb-3 text-white">Hello, I'm <span class="gradient-text">Sakthisairam P</span></h1>
+                    <h3 class="h4 mb-4 text-light-50"><span id="typed-text"></span></h3>
+                    <p class="lead mb-5 text-light">Passionate Computer Science student focused on Artificial Intelligence, Machine Learning, Data Analytics, and modern web technologies. I enjoy building intelligent systems, responsive applications, and innovative real-world solutions.</p>
+                    <div class="hero-buttons d-flex gap-3">
+                        <a href="#contact" class="btn btn-glow btn-lg px-4">Contact Me</a>
+                        <a href="resume.pdf" download class="btn btn-outline-glass btn-lg px-4">Download Resume</a>
+                    </div>
+                    <div class="social-icons mt-5">
+                        <a href="https://github.com/sakthisairam-p" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sakthisairam-p-35859a354" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="mailto:sakthisairam2410@gmail.com?subject=Contact%20from%20Portfolio" class="social-link"><i class="bi bi-envelope-at-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mt-5 mt-lg-0" data-aos="zoom-in">
+                    <div class="profile-img-container">
+                        <img src="profile.png" alt="Sakthisairam P" class="img-fluid rounded-circle profile-img">
+                        <div class="glow-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="bi bi-chevron-double-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold text-white mb-3">About <span class="gradient-text">Me</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-12 mb-5" data-aos="fade-up">
+                    <div class="glass-card p-4 text-center">
+                        <p class="lead text-light">I am a passionate AI & ML student with strong interest in intelligent systems, modern web development, and data-driven technologies. I actively participate in hackathons, workshops, paper presentations, and technical events to improve my technical, communication, and problem-solving skills. I enjoy creating AI-powered applications and responsive user-friendly interfaces.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="glass-card h-100 p-4 text-center hover-up">
+                        <i class="bi bi-cpu fs-1 text-primary mb-3"></i>
+                        <h4>AI & ML Enthusiast</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="glass-card h-100 p-4 text-center hover-up">
+                        <i class="bi bi-code-slash fs-1 text-primary mb-3"></i>
+                        <h4>Full Stack Development</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="300">
+                    <div class="glass-card h-100 p-4 text-center hover-up">
+                        <i class="bi bi-bar-chart-line fs-1 text-primary mb-3"></i>
+                        <h4>Data Analytics</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="400">
+                    <div class="glass-card h-100 p-4 text-center hover-up">
+                        <i class="bi bi-lightbulb fs-1 text-primary mb-3"></i>
+                        <h4>Problem Solving</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="500">
+                    <div class="glass-card h-100 p-4 text-center hover-up">
+                        <i class="bi bi-people fs-1 text-primary mb-3"></i>
+                        <h4>Team Collaboration</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="600">
+                    <div class="glass-card h-100 p-4 text-center hover-up">
+                        <i class="bi bi-palette fs-1 text-primary mb-3"></i>
+                        <h4>Creative Thinking</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-dark-2">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold text-white mb-3">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <div class="glass-card p-4">
+                        <h4 class="mb-4 text-white">Coding & Core</h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Python</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar glow-bar" role="progressbar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Machine Learning</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar glow-bar" role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Flutter</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar glow-bar" role="progressbar" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>SQL</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar glow-bar" role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-left">
+                    <div class="glass-card p-4">
+                        <h4 class="mb-4 text-white">Web & Data</h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>HTML & CSS</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar glow-bar" role="progressbar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>JavaScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar glow-bar" role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Data Analytics</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar glow-bar" role="progressbar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Data Visualization</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar glow-bar" role="progressbar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold text-white mb-3">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="glass-card project-card h-100 overflow-hidden">
+                        <div class="project-img-wrapper">
+                            <img src="project1.png" alt="Lip Reading AI" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="d-flex gap-2">
+                                    <a href="#" class="btn btn-sm btn-light"><i class="bi bi-github"></i> Code</a>
+                                    <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-white">Lip Reading AI</h4>
+                            <p class="text-light-50">AI-powered lip movement recognition system using Python.</p>
+                            <div class="tech-stack mt-3">
+                                <span class="badge bg-primary-soft">Python</span>
+                                <span class="badge bg-primary-soft">ML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="glass-card project-card h-100 overflow-hidden">
+                        <div class="project-img-wrapper">
+                            <img src="project2.png" alt="Secure Code Review" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="d-flex gap-2">
+                                    <a href="#" class="btn btn-sm btn-light"><i class="bi bi-github"></i> Code</a>
+                                    <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-white">Secure Code Review</h4>
+                            <p class="text-light-50">Intelligent analysis system for detecting vulnerabilities.</p>
+                            <div class="tech-stack mt-3">
+                                <span class="badge bg-primary-soft">Python</span>
+                                <span class="badge bg-primary-soft">Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="glass-card project-card h-100 overflow-hidden">
+                        <div class="project-img-wrapper">
+                            <img src="project3.png" alt="Neural Translator" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="d-flex gap-2">
+                                    <a href="#" class="btn btn-sm btn-light"><i class="bi bi-github"></i> Code</a>
+                                    <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-white">Neural Translator</h4>
+                            <p class="text-light-50">OCR and NLP-based multilingual translation system.</p>
+                            <div class="tech-stack mt-3">
+                                <span class="badge bg-primary-soft">OCR</span>
+                                <span class="badge bg-primary-soft">NLP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="glass-card project-card h-100 overflow-hidden">
+                        <div class="project-img-wrapper">
+                            <img src="project4.png" alt="Surround Pro" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="d-flex gap-2">
+                                    <a href="#" class="btn btn-sm btn-light"><i class="bi bi-github"></i> Code</a>
+                                    <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-link-45deg"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-white">Surround Pro</h4>
+                            <p class="text-light-50">Modern responsive 3D audio application with smart UI.</p>
+                            <div class="tech-stack mt-3">
+                                <span class="badge bg-primary-soft">Flutter</span>
+                                <span class="badge bg-primary-soft">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Areas of Interest) -->
+    <section id="services" class="section-padding bg-dark-2">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold text-white mb-3">Areas of <span class="gradient-text">Interest</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card service-card p-4 h-100 text-center">
+                        <div class="service-icon mb-4"><i class="bi bi-laptop fs-1"></i></div>
+                        <h4>Web Development</h4>
+                        <p class="text-light-50">Creating responsive, high-performance web applications using modern frameworks and glassmorphism UI.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card service-card p-4 h-100 text-center">
+                        <div class="service-icon mb-4"><i class="bi bi-robot fs-1"></i></div>
+                        <h4>AI/ML Solutions</h4>
+                        <p class="text-light-50">Developing intelligent models and data-driven systems for predictive analysis and automation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="glass-card service-card p-4 h-100 text-center">
+                        <div class="service-icon mb-4"><i class="bi bi-vector-pen fs-1"></i></div>
+                        <h4>UI/UX Design</h4>
+                        <p class="text-light-50">Designing intuitive, futuristic, and premium user interfaces with focus on user experience.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="glass-card service-card p-4 h-100 text-center">
+                        <div class="service-icon mb-4"><i class="bi bi-graph-up-arrow fs-1"></i></div>
+                        <h4>Data Analytics</h4>
+                        <p class="text-light-50">Extracting insights from complex datasets and visualizing them through interactive dashboards.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="glass-card service-card p-4 h-100 text-center">
+                        <div class="service-icon mb-4"><i class="bi bi-phone fs-1"></i></div>
+                        <h4>Mobile App Dev</h4>
+                        <p class="text-light-50">Building cross-platform mobile applications with smooth animations and smart functionalities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold text-white mb-3">Certificates & <span class="gradient-text">Achievements</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content glass-card p-4">
+                        <h5 class="text-primary"><i class="bi bi-trophy me-2"></i>Hackathons</h5>
+                        <p class="text-light-50">Participated in multiple state and national level hackathons, building innovative solutions within 48 hours.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content glass-card p-4">
+                        <h5 class="text-primary"><i class="bi bi-journal-text me-2"></i>Paper Presentations</h5>
+                        <p class="text-light-50">Presented technical papers on AI & Machine Learning in various technical symposiums.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content glass-card p-4">
+                        <h5 class="text-primary"><i class="bi bi-tools me-2"></i>Workshops</h5>
+                        <p class="text-light-50">Attended multiple technical workshops on Data Analytics, Flutter, and Deep Learning.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content glass-card p-4">
+                        <h5 class="text-primary"><i class="bi bi-people-fill me-2"></i>Symposiums</h5>
+                        <p class="text-light-50">Active participation in technical symposiums and team collaboration activities across colleges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-dark-2">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold text-white mb-3">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 mb-4" data-aos="fade-right">
+                    <div class="glass-card p-4 h-100">
+                        <h4 class="mb-4 text-white">Contact Info</h4>
+                        <div class="contact-info-item d-flex mb-4">
+                            <div class="contact-icon me-3"><i class="bi bi-geo-alt-fill fs-4"></i></div>
+                            <div>
+                                <h6 class="mb-0 text-white">Location</h6>
+                                <p class="text-light-50 mb-0">Sirkali, Mayiladuthurai - 609108</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item d-flex mb-4">
+                            <div class="contact-icon me-3"><i class="bi bi-telephone-fill fs-4"></i></div>
+                            <div>
+                                <h6 class="mb-0 text-white">Phone</h6>
+                                <p class="text-light-50 mb-0">+91 90436 99463</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item d-flex mb-4">
+                            <div class="contact-icon me-3"><i class="bi bi-envelope-fill fs-4"></i></div>
+                            <div>
+                                <h6 class="mb-0 text-white">Email</h6>
+                                <p class="text-light-50 mb-0">sakthisairam2410@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="social-links-circle mt-5 d-flex gap-3">
+                            <a href="https://github.com/sakthisairam-p" target="_blank" class="circle-icon"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/sakthisairam-p-35859a354" target="_blank" class="circle-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="mailto:sakthisairam2410@gmail.com?subject=Contact%20from%20Portfolio" class="circle-icon"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 mb-4" data-aos="fade-left">
+                    <div class="glass-card p-4">
+                        <form id="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label text-white">Your Name</label>
+                                    <input type="text" class="form-control glass-input" placeholder="John Doe" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label text-white">Your Email</label>
+                                    <input type="email" class="form-control glass-input" placeholder="john@example.com" required>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label class="form-label text-white">Message</label>
+                                    <textarea class="form-control glass-input" rows="5" placeholder="Your message here..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-glow w-100">Send Message <i class="bi bi-send ms-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-5">
+        <div class="container text-center">
+            <h2 class="gradient-text fw-bold mb-4">SAK.TECH</h2>
+            <p class="text-light-50 mb-4 mx-auto" style="max-width: 600px;">Building the future with Intelligence and Creativity. Let's collaborate on something amazing.</p>
+            <div class="footer-socials mb-4 d-flex justify-content-center gap-4">
+                <a href="https://github.com/sakthisairam-p" target="_blank" class="text-white fs-4"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/sakthisairam-p-35859a354" target="_blank" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:sakthisairam2410@gmail.com?subject=Contact%20from%20Portfolio" class="text-white fs-4"><i class="bi bi-envelope"></i></a>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0 text-light-50">&copy; 2026 Sakthisairam P | AI & ML Portfolio</p>
+                <a href="#home" class="back-to-top mt-3 mt-md-0"><i class="bi bi-arrow-up-circle-fill fs-2"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Side Dot Navigation -->
+    <div class="side-nav">
+        <a href="#home" class="side-nav-dot active" data-tooltip="Home"></a>
+        <a href="#about" class="side-nav-dot" data-tooltip="About"></a>
+        <a href="#skills" class="side-nav-dot" data-tooltip="Skills"></a>
+        <a href="#projects" class="side-nav-dot" data-tooltip="Projects"></a>
+        <a href="#services" class="side-nav-dot" data-tooltip="Interests"></a>
+        <a href="#achievements" class="side-nav-dot" data-tooltip="Achievements"></a>
+        <a href="#contact" class="side-nav-dot" data-tooltip="Contact"></a>
+    </div>
+
+    <!-- Floating Back to Top -->
+    <a href="#home" class="floating-back-to-top" id="backToTop">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
