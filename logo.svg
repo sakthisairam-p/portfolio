@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B35" />
+      <stop offset="50%" stop-color="#FFA066" />
+      <stop offset="100%" stop-color="#FF4500" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Futuristic Dark Hexagon Base -->
+  <polygon points="50,6 90,28 90,72 50,94 10,72 10,28" fill="#14141A" stroke="url(#cyberGrad)" stroke-width="4.5" filter="url(#neonGlow)" />
+  <!-- Inner Subtle Accent Ring -->
+  <polygon points="50,14 82,32 82,68 50,86 18,68 18,32" fill="none" stroke="rgba(255, 107, 53, 0.25)" stroke-width="1.5" />
+  <!-- Cyber Monogram 'S' Path -->
+  <path d="M68,34 C64,28 58,26 50,26 C38,26 32,32 32,40 C32,48 40,51 52,54 C66,57 70,62 70,70 C70,79 62,85 50,85 C40,85 33,80 30,72" fill="none" stroke="url(#cyberGrad)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Center Energy Core Dot -->
+  <circle cx="50" cy="50" r="3" fill="#FFFFFF" />
+</svg>
